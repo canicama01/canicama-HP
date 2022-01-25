@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/*ヘッダー*/
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 200;
+  }
+  .global-nav {
+    position: fixed;
+    right: -320px; /* これで隠れる */
+    top: 0;
+    width: 300px; /* スマホに収まるくらい */
+    height: 100vh;
+    padding-top: 130px;
+    background-color: #fff;
+    transition: all .6s;
+    z-index: 201;
+    overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+  }
+  .hamburger {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    width: 34px;
+    height: 46px;
+    cursor: pointer;
+    z-index: 300;
+    padding-right: 18px;
+    border-radius: 13px;
+  }
+  .global-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .global-nav__item {
+      padding: 0 3em;
+  }
+  .global-nav__item a {
+    display: block;
+    padding: 30px;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-decoration: none;
+    color: #111;
+    letter-spacing: 0.4em;
+  }
+  .global-nav__item a:hover {
+    background-color: #eee;
+  }
+  .hamburger__line {
+    position: absolute;
+    left: 6px;
+    width: 33px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    transition: all .6s;
+  }
+  .hamburger__line--1 {
+    top: 22px;
+  }
+  .hamburger__line--2 {
+    top: 25px;
+  }
+  .hamburger__line--3 {
+    top: 30px;
+  }
+  .black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+  }
+  /* 表示された時用のCSS */
+  .nav-open .global-nav {
+    right: 0;
+  }
+  .nav-open .black-bg {
+    opacity: .8;
+    visibility: visible;
+  }
+  .nav-open .hamburger__line--1 {
+    transform: rotate(45deg);
+    top: 20px;
+  }
+  .nav-open .hamburger__line--2 {
+    width: 0;
+    left: 50%;
+  }
+  .nav-open .hamburger__line--3 {
+    transform: rotate(-45deg);
+    top: 20px;
+  }
+
+  /*ナビ追記（SNSアイコン）*/
+.nav_sns_icon ul{
+  background-color: brown;
+}
+.nav_sns_icon .fa-2x{
+  color: black;
+  font-size: 1.5em;
+}
+.nav_sns_icon ul{
+  margin: 3em;
+}
+.nav_sns_icon ul li{
+  list-style: none;
+  float: left;
+  margin: 0 1em;
+}
+.nav_sns_icon ul li a{
+  padding: 10px;
+}
+/*ナビ追記（ユウレイ特設サイト）*/
+.yurei{
+    /* padding: 3em; */
+    display: inline-block;
+    margin: 3em 3.8em;
+    text-align: center;
+}
+.yurei p a{
+  text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: grey;
+    padding: 1.3em;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+/*コンテンツ*/
+.home{
+    height: 20vh;
+    width: 100%;
+    padding: 6em 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    display: block;
+    content: "";
+    width: 27px;
+    height: 1px;
+    background: #d2d2d2;
+    position: absolute;
+    top: -45px;
+    left: 0;
+    transform: rotate(
+-52deg
+);
+}
+.home h1{
+    font-size: 0.9em;
+    margin: 2em 0.6em;
+    letter-spacing: 0.2em;
+}
+.home p{
+    font-size: 12px;
+    margin: 1em;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+}
+.post{
+    width: 100%;
+    height: 1800px;
+}
+.post ul li{
+    width: 340px;
+    height: 250px;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    margin: 0em auto 5.5em auto;
+}
+.post ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+.post li a span{
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+}
+.post ul li img{
+    width: 340px;
+    height: 250px;
+}
+@media screen and (min-width:768px){
+    .post{
+        height: 3220px;
+    }
+    .post ul li{
+        width: 650px;
+        height: 500px;
+        margin: 0em auto 8em auto;
+    }
+    .post ul li a{
+        font-size: 1em;
+    }
+    .post ul li img{
+        width: 650px;
+        height: 500px;
+    }
+}
+.footer p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 0.7em;
+  }
