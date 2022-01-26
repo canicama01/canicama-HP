@@ -13,6 +13,7 @@ html{
   padding: 6em 0 3em 0;
   font-size: 1em;
   letter-spacing: 0.6em;
+  color: #000;
 }
 
 /*ヘッダー*/
@@ -156,7 +157,6 @@ html{
 .home{
   width: 100%;
   height: 100vh;
-  background-image: url(images/sample03.png);
 }
 .home p{
   position: absolute;
@@ -170,6 +170,7 @@ html{
   font-size: 1.7em;
   letter-spacing: 0.3em;
   font-family: 'Baloo Bhaijaan 2', cursive;
+  color: #000;
 }
 
 .profile{
@@ -183,6 +184,7 @@ html{
 .profile_text p{
   margin: 1em;
   font-size: 0.85em;
+  color: #000;
 }
 
 .link_text{
@@ -202,9 +204,14 @@ html{
 .link_text ul li a{
   color: #000;
 }
+.link_text ul li a:hover{
+  color: #7c7c7c;
+  transition: all 0.3s ease 0s;
+}
 .name{
   font-size: 1.3em;
   margin: 2em 0.6em;
+  color: #000;
 }
 .link{
   float: left;
@@ -229,6 +236,10 @@ html{
   color: rgb(147, 177, 211);
   font-size: 1.5em;
 }
+.link li a i:hover{
+  color: rgb(104, 104, 104);
+  transition: all 0.3s ease 0s;
+}
 .commission{
   width: 100%;
   height: 440px;
@@ -237,22 +248,37 @@ html{
 .contact_form{
     width: 100%;
     height: 100vh;
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(241, 241, 241);
 }
 .commission_text{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.link_skeb a{
+  color: grey;
+}
+.link_skeb a:hover{
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease 0s;
+}
 .contact_form{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.contact_form ul{
+  margin-top: 2em;
+}
 .contact_form ul li{
   list-style: none;
-  font-size: 0.9em;
-  margin: 0.7em;
+  font-size: 0.7em;
+  margin: 1em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.contact_form ul li p{
+  margin: 0.2em 0;
 }
 .commission ul p{
   list-style: none;
@@ -263,15 +289,17 @@ html{
 h2{
   text-align: center;
   font-size: 1em;
+  margin: 1em;
+  letter-spacing: 0.1em;
 }
 input{
   border: none;
   outline: none;
-  width: 19em;
+  width: 22em;
   height: 1.8em;
+  background-color: rgb(219, 219, 219);
 }
 .commission ul p a{
-  color: rgb(62, 111, 156);
   font-weight: 600;
   text-decoration: none;
 }
@@ -279,11 +307,9 @@ input{
   margin-right: 1em;
 }
 .form_link{
-  background-color: grey;
+  
   text-align: center;
   margin-top: 4em;
-  border-radius: 10px;
-  box-shadow: 2px 2px 4px gray;
 }
 .form_link p{
   margin: 2em;
@@ -291,19 +317,62 @@ input{
 }
 .form_link  a{
   padding: 1em 5em;
-  color: #fff;
+}
+/*マウスホバー時に色が変化*/
+.form_link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_link a {
+  width: 140px;
+  height: 45px;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: grey;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.form_link a:hover {
+  background-color: #000000;
+  box-shadow: 0px 15px 20px rgba(117, 117, 117, 0.4);
+  color: rgb(255, 255, 255);
+  transform: translateY(-7px);
+}
+/**/
+.form_check{
+  font-size: 0.2em;
+  font-weight: 100;
+}
+.form_check ul li p span{
+  margin: 1em;
+}
+.line_box{
+  width: 100%;
+  height: 1px;
+  background-color: black;
 }
 button{
 	display: inline-block;
 	vertical-align: middle;
-	margin: 0 10px;
+  margin: 30px 100px;
 	padding: 6px 25px;
 	color: #ffffff;
 	font-weight: bold;
 	letter-spacing: 0.5pt;
 	text-decoration: none;
-	background-color: #929292;
-	border: 1px solid #a5a5a5;
+	background-color: #7c7c7c;
+	border: 1px solid #7c7c7c;
 	cursor: pointer;
 	transition-duration:0.3s;
     -webkit-transition-duration:0.3s;
@@ -313,7 +382,7 @@ button{
 } 
 .gallery{
     width: 100%;
-    height: 220vh;
+    height: 200vh;
     background-color: rgb(255, 255, 255);
 }
 .gallery_images {
@@ -328,6 +397,11 @@ button{
   margin: 1em 0.5em;
   list-style: none;
   border-radius: 10px;
+}
+.pu-content{
+  width: 90%;
+  height: auto;
+  background-color: aquamarine;
 }
 @media screen and (min-width:768px) {
   .gallery{
@@ -349,7 +423,6 @@ footer{
   width: 100%;
 }
 .footer{
-  background-color: rgb(255, 255, 255);
   height: 2em;
   position: absolute;
   bottom: 0;
