@@ -9,11 +9,12 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@canicama_" />
     <meta name="twitter:title" content="canicama" />
-    <meta name="twitter:description" content="日記" />
+    <meta name="twitter:description" content="ホームページ" />
     <meta name="twitter:image" content="	https://canicama01.github.io/canicama-HP/images/sample03.png" />
 
     <title>canicama</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="p1.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -30,7 +31,7 @@
     <header class="header">
         <nav class="global-nav">
           <ul class="global-nav__list" id="navi_list">
-            <li class="global-nav__item"><a href="#plofile">ABOUT</a></li>
+            <li class="global-nav__item"><a href="#profile">ABOUT</a></li>
             <li class="global-nav__item"><a href="contact.html">CONTACT</a></li>
             <li class="global-nav__item"><a href="#gallery">ILLUST</a></li>
             <li class="global-nav__item"><a href="nikki.html">NIKKI</a></li>
@@ -55,8 +56,19 @@
       </header>
 
     <div class="home">
-      <div class="home_images"><img src="images/sample03.png" alt=""></div>
+      <div class="home_images"><!--<img src="images/sample03.png" alt="">--></div>
       <p>canicama</p>
+      <div class="indicator-container">
+        <div class="indicator-arrow top">
+          <div class="base"></div>
+          <div class="arrowpoint"></div>
+        </div>
+        <div class="indicator-arrow bottom">
+          <div class="base"></div>
+          <div class="arrowpoint"></div>
+        </div>
+      </div>
+
     </div>
 
     <div class="profile" id="profile">
@@ -84,10 +96,10 @@
       <h1>CONTACT</h1>
       <div class="commission_text">
         <ul>
-            <p><a href="https://skeb.jp/@canicama_">Skeb</a>でのご依頼を推奨しております。</p>
+            <p class="link_skeb"><a href="https://skeb.jp/@canicama_">Skeb</a>でのご依頼を推奨しております。</p>
             <p><i class="fas fa-envelope" style="margin-right: 1em;"></i>canicama01@gmail.com</p>
             <div class="form_link">
-              <p class="form_link"><a href="contact.html" style="color: #FFF;">ご依頼はこちらから</a></p>
+              <p class="form_link"><a href="contact.html">ご依頼はこちらから</a></p>
             </div>
         </ul>
         <!--
@@ -104,8 +116,27 @@
       </div>
     <div class="gallery_images">
       <ul>
-        <li></li>
-        <li></li>
+        <li>
+          <div class="pu-box">
+            <label for="pu-on">
+              <div class="btn-open">
+                <img src="images/IMG_0526.JPG" width="300" alt="" class="layer-img">
+              </div>
+            </label>
+            <input type="checkbox" id="pu-on">
+            <div class="pu">
+              <label for="pu-on" class="icon-close">×</label>
+              <!-- ポップアップの中身 -->
+              <div class="pu-content">
+              <img src="images/IMG_0526.JPG" width="350" alt="" class="layer-img">
+                <!-- ./ポップアップの中身　ここまで -->
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+
+        </li>
         <li></li>
         <li></li>
         <li></li>
@@ -114,6 +145,7 @@
     </div>
     </div>
   </div>
+  
 </div>
 
 <footer>
