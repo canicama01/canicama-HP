@@ -155,6 +155,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fafafa;
 }
 .line{
     display: block;
@@ -183,47 +184,52 @@ html{
 .post{
     width: 100%;
     height: 1800px;
+    background-color: #fafafa;
 }
 .post ul li{
-    width: 340px;
-    height: 250px;
+  width: 382px;
+  height: 300px;
+  border-radius: 20px;
     list-style: none;
     background-color: rgb(255, 255, 255);
-    margin: 0em auto 5.5em auto;
+    margin: 0em auto 1em auto;
+    box-shadow: 1px 1px 4px rgb(179, 179, 179);
 }
 .post ul li a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 0.9em;
     letter-spacing: 0.1em;
+    
+}
+.post li a img{
+  border-radius: 20px 20px 0 0;
 }
 .post li a span{
     font-size: 0.7em;
     letter-spacing: 0.2em;
+    float: right;
+    color: grey;
+    margin-top: 0.3em;
+}
+.post li a p{
+  padding: 0.5em 1em;
+  font-size: 16px;
 }
 .post ul li img{
-    width: 340px;
-    height: 250px;
+    width: 382px;
+    height: 220px;
 }
-@media screen and (min-width:768px){
-    .post{
-        height: 3220px;
-    }
-    .post ul li{
-        width: 650px;
-        height: 500px;
-        margin: 0em auto 8em auto;
-    }
-    .post ul li a{
-        font-size: 1em;
-    }
-    .post ul li img{
-        width: 650px;
-        height: 500px;
-    }
+.post_text{
+  background-color: green;
 }
 .footer p{
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 0.7em;
-  }
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 0.7em;
+  background-color: #fafafa;
+}
+@media screen and (min-width:768px){
+ 
+
+}
