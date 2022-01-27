@@ -190,23 +190,28 @@ html{
 .link_text{
   height: 200px;
 }
-.link_text ul{
-  margin-left: 1em;
-}
 .link_text ul li{
   list-style: none;
   float: left;
-  margin: 1em 0;
-}
-.link_text ul li span{
-  margin: 1.5em;
+  margin: 1.3em;
 }
 .link_text ul li a{
-  color: #000;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 25%;
+  background: #e0e0e0;
+box-shadow:  4px 4px 9px #9d9d9d,
+             -4px -4px 9px #ffffff;
+
 }
 .link_text ul li a:hover{
   color: #7c7c7c;
   transition: all 0.3s ease 0s;
+}
+.link_text li a i{
+    color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  padding: 1em;
 }
 .name{
   font-size: 1.3em;
@@ -218,9 +223,7 @@ html{
   width: 100%;
 }
 .link li{
-    width: 30px;
-    height: 30px;
-    margin: 1.3em;
+    margin: 2em 1.3em;
     float: left;
     list-style: none;
 }
@@ -229,12 +232,16 @@ html{
     background-color: center center;
     display: block;
     background-size: cover;
-    width: 30px;
-    height: 30px;
+    border-radius: 109px;
+background: #e0e0e0;
+box-shadow:  4px 4px 9px #9d9d9d,
+             -4px -4px 9px #ffffff;
+
 }
 .link li a i{
-  color: rgb(147, 177, 211);
-  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  padding: 1em;
 }
 .link li a i:hover{
   color: rgb(104, 104, 104);
@@ -333,19 +340,24 @@ input{
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
-  color: rgb(255, 255, 255);
-  background-color: grey;
+  color: rgb(114, 114, 114);
   border: none;
-  border-radius: 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+  
+  border-radius: 52px;
+background: #e0e0e0;
+box-shadow:  9px 9px 21px #a6a6a6,
+             -9px -9px 21px #ffffff;
   }
 
 .form_link a:hover {
-  background-color: #000000;
-  box-shadow: 0px 15px 20px rgba(117, 117, 117, 0.4);
+    border-radius: 52px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  9px 9px 21px #9d9d9d,
+                 -9px -9px 21px #ffffff;
   color: rgb(255, 255, 255);
   transform: translateY(-7px);
 }
