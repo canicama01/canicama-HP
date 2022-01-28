@@ -7,8 +7,7 @@ html{
   font-family: 'Baloo Bhaijaan 2', cursive;
   font-family: 'Noto Sans JP', sans-serif;
   color: #333333;
-
-  appearance: none;
+  -webkit-appearance: none;
 }
 
 .content h1{
