@@ -8,6 +8,7 @@ html{
   font-family: 'Noto Sans JP', sans-serif;
   color: #333333;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 .content h1{
@@ -530,6 +531,7 @@ box-shadow:  4px 4px 8px #bebebe,
   width: 280px;
   margin: 2%;
   border-radius: 20px;
+}
 }
 /*フッター*/
 footer{
