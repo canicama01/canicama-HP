@@ -7,6 +7,8 @@ html{
   font-family: 'Baloo Bhaijaan 2', cursive;
   font-family: 'Noto Sans JP', sans-serif;
   color: #333333;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .content h1{
@@ -508,7 +510,7 @@ height: auto;
 }
 .illust_more p a{
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(143, 143, 143);
   padding: 0.6em 1.6em;
 border-radius: 10px;
 background: #e0e0e0;
