@@ -211,6 +211,7 @@ box-shadow:  4px 4px 9px #9d9d9d,
 .link_text ul li a:hover{
 color: #7c7c7c;
 transition: all 0.3s ease 0s;
+
 }
 .link_text li a i{
   color: rgb(255, 255, 255);
@@ -261,8 +262,10 @@ font-size: 1.2em;
 padding: 1em;
 }
 .link li a i:hover{
-color: rgb(104, 104, 104);
-transition: all 0.3s ease 0s;
+border-radius: 109px;
+background: linear-gradient(145deg, #cacaca, #f0f0f0);
+box-shadow:  5px 5px 13px #b5b5b5,
+             -5px -5px 13px #ffffff;
 }
 .commission{
 width: 100%;
@@ -324,7 +327,7 @@ h2{
   height: 3.2px;
   margin: 0.5em 0 0 0;
 }
-input{
+.contact_form input{
   border: none;
   outline: none;
   width: 20em;
