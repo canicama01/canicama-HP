@@ -561,7 +561,7 @@ height: auto;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #c8c9cc, -5px -5px 10px #ffffff;
   letter-spacing: 0.1em;
-  font-size: 0.7em;
+  font-size: 1em;
 }
 @media screen and (min-width:768px) {
 .gallery{
