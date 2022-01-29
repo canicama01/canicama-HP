@@ -7,3 +7,16 @@ background: #f0f1f1;
 box-shadow: inset 7px 7px 13px #c5c6c6,
             inset -7px -7px 13px #ffffff;
 }
+input{
+
+}
+.input{
+    background: #f0f1f1;
+    box-shadow: inset 7px 7px 13px #c5c6c6,
+                inset -7px -7px 13px #ffffff;
+                border:none;
+                width: 20em;
+                height: 7em;
+                resize: none;
+                padding: 1em;
+}
