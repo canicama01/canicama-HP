@@ -185,7 +185,7 @@ html{
 }
 .post{
     width: 100%;
-    height: 1800px;
+    height: 1490px;
     background: #f0f1f1;
 }
 .post ul li{
@@ -233,9 +233,6 @@ html{
   text-align: center;
   color: rgb(0, 0, 0);
   font-size: 0.7em;
-  background-color: #fafafa;
-}
-@media screen and (min-width:768px){
- 
-
+  background: #f0f1f1;
+  padding: 3em;
 }
