@@ -9,14 +9,27 @@ html{
   color: #333333;
 }
 
-.content h1{
+.profile h1{
 text-align: center;
-padding: 6em 0 3em 0;
+padding: 2em 0 3em 0;
 font-size: 1em;
 letter-spacing: 0.6em;
 color: #333333;
 }
-
+.commission h1{
+  padding: 6em 0 3em 0;
+  text-align: center;
+font-size: 1em;
+letter-spacing: 0.6em;
+color: #333333;
+}
+.gallery h1{
+  text-align: center;
+  padding: 6em 0 3em 0;
+font-size: 1em;
+letter-spacing: 0.6em;
+color: #333333;
+}
 
 
 /*ヘッダー*/
@@ -176,11 +189,34 @@ letter-spacing: 0.3em;
 font-family: 'Baloo Bhaijaan 2', cursive;
 color: #333;
 }
+.blur{
+  animation-name:blurAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes blurAnime{
+  from {
+  filter: blur(10px);
+  transform: scale(1.02);
+  opacity: 0;
+  }
+
+  to {
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+  }
+}
+ 
+.blurTrigger{
+    opacity: 0;
+}
 
 .profile{
   width: 100%;
   height: 100vh;
-  background: rgb(241, 241, 241);
+  background-color: #ebedf0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -206,7 +242,6 @@ border-radius: 25%;
 background: #e0e0e0;
 box-shadow:  4px 4px 9px #9d9d9d,
            -4px -4px 9px #ffffff;
-
 }
 .link_text ul li a:hover{
 color: #7c7c7c;
@@ -251,9 +286,9 @@ margin: 0 13px;
   background-size: cover;
   border-radius: 109px;
   margin: 1em;
-background: #e0e0e0;
-box-shadow:  4px 4px 9px #9d9d9d,
-           -4px -4px 9px #ffffff;
+  background-color: #EBECF0;
+  box-shadow:  5px 5px 10px #c8c9cc,
+             -5px -5px 10px #ffffff;
 
 }
 .link li a i{
@@ -270,7 +305,7 @@ box-shadow:  5px 5px 13px #b5b5b5,
 .commission{
 width: 100%;
 height: 440px;
-background-color: rgb(230, 230, 230);
+background-color: #e1e5ec;
 }
 .contact_form{
   width: 100%;
@@ -363,7 +398,10 @@ textarea[type="message"] {
   transition: all 0.3s;
   border-radius: 4px;
   background: rgb(241, 241, 241);
-  box-shadow: 3px 3px 5px #c1c1c1, -3px -3px 5px #ffffff;
+border-radius: 11px;
+background: #e1e5ec;
+box-shadow:  5px 5px 10px #bbbec4,
+             -5px -5px 10px #ffffff;
   left: 213px;
   top: -10px;
  }
@@ -415,23 +453,24 @@ justify-content: center;
 }
 
 .form_link a {
-width: 140px;
-height: 45px;
-font-size: 1em;
-text-transform: uppercase;
-letter-spacing: 2.5px;
-font-weight: 500;
-color: rgb(143, 143, 143);
-border: none;
-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-transition: all 0.3s ease 0s;
-cursor: pointer;
-outline: none;
-
-border-radius: 52px;
-background: #e0e0e0;
-box-shadow:  9px 9px 21px #a6a6a6,
-           -9px -9px 21px #ffffff;
+  width: 140px;
+  height: 45px;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: rgb(143, 143, 143);
+  border: none;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  border-radius: 52px;
+  /* background: #e0e0e0; */
+  /* box-shadow: 9px 9px 21px #a6a6a6, -9px -9px 21px #ffffff; */
+  /* border-radius: 11px; */
+  background: #e1e5ec;
+  box-shadow: 5px 5px 10px #bbbec4, -5px -5px 10px #ffffff;
 }
 
 .form_link a:hover {
@@ -479,7 +518,7 @@ button p{
 .gallery{
   width: 100%;
   height: 130vh;
-  background-color: rgb(241, 241, 241);
+  background-color: #ebedf0;
 }
 .gallery_images {
 display: flex;
@@ -518,12 +557,11 @@ height: auto;
 .illust_more p a{
   text-decoration: none;
   color: rgb(148, 148, 148);
-  padding: 0.6em 1.6em;
-border-radius: 10px;
-background: #e0e0e0;
-box-shadow:  4px 4px 8px #bebebe,
-             -4px -4px 8px #ffffff;
+  padding: 0.5em 1.2em;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #c8c9cc, -5px -5px 10px #ffffff;
   letter-spacing: 0.1em;
+  font-size: 0.7em;
 }
 @media screen and (min-width:768px) {
 .gallery{
@@ -552,7 +590,7 @@ width: 100%;
 .footer{
   height: 2em;
   position: absolute;
-  background: rgb(241, 241, 241);
+  background-color: #ebedf0;
   width: 100%;
   height: 100px;
 }
@@ -562,3 +600,4 @@ color: rgb(0, 0, 0);
 font-size: 0.7em;
 margin: 5em 0 2em 0;
 }
+

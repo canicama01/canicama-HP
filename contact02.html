@@ -12,8 +12,8 @@
   <header class="header">
     <nav class="global-nav">
       <ul class="global-nav__list" id="navi_list">
-        <li class="global-nav__item"><a href="#profile">ABOUT</a></li>
-        <li class="global-nav__item"><a href="contact02.html">CONTACT</a></li>
+        <li class="global-nav__item"><a href="index.html#profile">ABOUT</a></li>
+        <li class="global-nav__item"><a href="#">CONTACT</a></li>
         <li class="global-nav__item"><a href="illust.html">ILLUST</a></li>
         <li class="global-nav__item"><a href="nikki.html">NIKKI</a></li>
       </ul>
@@ -42,8 +42,10 @@
         <div class="contact_order">
           <ul>
             <li><span>01</span><br>内容入力</li>
-            <li><span>02</span><br> 内容確認</li>
-            <li><span>03</span><br> 送信完了</li>
+            <li class="contact_line_box" style="margin-top: 13px;"></li>
+            <li><span>02</span><br>内容確認</li>
+            <li class="contact_line_box" style="margin-top: 13px;"></li>
+            <li><span>03</span><br>送信完了</li>
           </ul>
         </div>
     <form>
@@ -54,19 +56,19 @@
           <p>メールアドレス</p><input type="text" placeholder="メールアドレス"/>
         </label>
         <label>
-            <p>制作内容</p><input type="message" placeholder="制作内容"/>
+            <p>制作内容</p><textarea id="t_message" name="message" placeholder="制作内容"></textarea>
           </label>
         <div id="attachment">
           <label><input type="file" name="ファイル添付" class="fileinput">添付ファイル</label>
          </div>
         <label>
-            <p>使用用途</p><input type="text" placeholder="使用用途"/>
+            <p>使用用途</p><input type="text" placeholder="アイコンに使用"/>
         </label>
         <label>
-            <p>予算</p><input type="text" placeholder="予算"/>
+            <p>予算</p><input type="text" placeholder="0000円"/>
           </label>
         <label>
-            <p>納期</p><input type="text" placeholder="納期"/>
+            <p>納期</p><input type="text" placeholder="00年00月00日"/>
         </label>
         <label>
             <p>その他</p><input type="text" placeholder="その他"/>

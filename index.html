@@ -24,6 +24,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Gruppo&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
+    <!--テキストがじわっと出現-->
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-9/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-9/css/8-9.css">
+
 
 </head>
 <body>
@@ -57,8 +62,9 @@
       </header>
 
     <div class="home">
-      <div class="home_images"><!--<img src="images/sample03.png" alt="">--></div>
-      <p>canicama</p>
+      <div id="splash">
+        <div id="splash_text"><p><span class="blurTrigger">canicama</span></p></div>
+      </div>
       <div class="indicator-container">
         <div class="indicator-arrow top">
           <div class="base"></div>
@@ -72,6 +78,8 @@
 
     </div>
 
+
+         
     <div class="profile" id="profile">
             <div class="profile_text">
               <h1>ABOUT</h1>
@@ -94,6 +102,7 @@
 
             </div>
     </div>
+<!--/container--></div>
 
     <div class="commission" id="commission">
       <h1>CONTACT</h1>
@@ -102,7 +111,7 @@
             <p class="link_skeb"><a href="https://skeb.jp/@canicama_">Skeb</a>でのご依頼を推奨しております。</p>
             <p><i class="fas fa-envelope" style="margin-right: 1em;"></i>canicama01@gmail.com</p>
             <div class="form_link">
-              <p class="form_link"><a href="contact.html">ご依頼はこちらから</a></p>
+              <p class="form_link"><a href="contact02.html">ご依頼はこちらから</a></p>
             </div>
         </ul>
         <!--
@@ -252,6 +261,10 @@
 </footer>
 
     <script src="navi.js"></script>
+
+    <!--テキストがじわっと出てくる-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-9/js/8-9.js"></script>
 
 </body>
 </html>

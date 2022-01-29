@@ -151,10 +151,9 @@ html{
 body {
     background-color: #EBECF0;
   }
-  button, input {
+  button, input, textarea {
     border: 0;
     outline: 0;
-    font-size: 0.8em;
     border-radius: 20px;
     padding: 0.8em 1.5em;
     background-color: #EBECF0;
@@ -182,8 +181,6 @@ justify-content: center;
     margin: 0 auto;
 }
 .contact_order ul li{
-    width: 94px;
-    height: 48px;
     float: left;
     list-style: none;
     margin: 0.2em;
@@ -197,7 +194,13 @@ justify-content: center;
 }
 .contact_order ul li span{
     font-size: 0.9em;
-    margin: 1em;
+    margin: 0 0.6em;
+    display: inline-block;
+}
+.contact_line_box{
+    background-color: #61677C;
+    height: 1px;
+    width: 50px;
 }
   label {
     display: block;
@@ -221,7 +224,24 @@ justify-content: center;
     -webkit-appearance: none;
     font-size: 0.8em;
   }
+  textarea{
+    margin-right: 8px;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 10em;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 0.8em 1.5em;
+  }
   input:focus {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+  }
+  textarea:focus {
     box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
   }
   button {
@@ -230,8 +250,7 @@ justify-content: center;
     box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
-    font-weight: 600;
-    margin: 30px 38%;
+    margin: 30px 37%;
     padding: 0.6em 2em;
   }
   button:hover {
@@ -248,6 +267,7 @@ justify-content: center;
   }
   h2 span{
     font-size: 0.5em;
+    color: #939599;
   }
 #attachment label {
     display: inline-block;
