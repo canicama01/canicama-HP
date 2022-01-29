@@ -539,6 +539,9 @@ box-shadow:  4px 4px 8px #bebebe,
   margin: 2%;
   border-radius: 20px;
 }
+.pu-content {
+  width: 65%;
+}
 }
 /*フッター*/
 footer{
