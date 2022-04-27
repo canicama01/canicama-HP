@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333333;
+}
+
+
+/*ヘッダー*/
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 200;
+  }
+  .global-nav {
+    position: fixed;
+    right: -320px; /* これで隠れる */
+    top: 0;
+    width: 300px; /* スマホに収まるくらい */
+    height: 100vh;
+    padding-top: 130px;
+    background-color: #fff;
+    transition: all .6s;
+    z-index: 201;
+    overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+  }
+  .hamburger {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    width: 34px;
+    height: 46px;
+    cursor: pointer;
+    z-index: 300;
+    padding-right: 18px;
+    border-radius: 13px;
+  }
+  .global-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .global-nav__item {
+      padding: 0 3em;
+  }
+  .global-nav__item a {
+    display: block;
+    padding: 30px;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-decoration: none;
+    color: #111;
+    letter-spacing: 0.4em;
+  }
+  .global-nav__item a:hover {
+    background-color: #eee;
+  }
+  .hamburger__line {
+    position: absolute;
+    left: 6px;
+    width: 33px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    transition: all .6s;
+  }
+  .hamburger__line--1 {
+    top: 22px;
+  }
+  .hamburger__line--2 {
+    top: 25px;
+  }
+  .hamburger__line--3 {
+    top: 30px;
+  }
+  .black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+  }
+  /* 表示された時用のCSS */
+  .nav-open .global-nav {
+    right: 0;
+  }
+  .nav-open .black-bg {
+    opacity: .8;
+    visibility: visible;
+  }
+  .nav-open .hamburger__line--1 {
+    transform: rotate(45deg);
+    top: 20px;
+  }
+  .nav-open .hamburger__line--2 {
+    width: 0;
+    left: 50%;
+  }
+  .nav-open .hamburger__line--3 {
+    transform: rotate(-45deg);
+    top: 20px;
+  }
+  
+  /*ナビ追記（SNSアイコン）*/
+  .nav_sns_icon ul{
+  background-color: brown;
+  }
+  .nav_sns_icon .fa-2x{
+  color: black;
+  font-size: 1.5em;
+  }
+  .nav_sns_icon ul{
+  margin: 3em;
+  }
+  .nav_sns_icon ul li{
+  list-style: none;
+  float: left;
+  margin: 0 1em;
+  }
+  .nav_sns_icon ul li a{
+  padding: 10px;
+  }
+  /*ナビ追記（ユウレイ特設サイト）*/
+  .yurei{
+    /* padding: 3em; */
+    display: inline-block;
+    margin: 3em 3.8em;
+    text-align: center;
+  }
+  .yurei p a{
+  text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: grey;
+    padding: 1.3em;
+    border-radius: 10px;
+    font-size: 0.9em;
+  }
+
+body {
+    background-color: #EBECF0;
+  }
+  button, input, textarea {
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    padding: 0.8em 1.5em;
+    background-color: #EBECF0;
+    text-shadow: 1px 1px 0 #fff;
+  }
+.contact_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact_form ul{
+    margin-top: 3em;
+}
+.contact_order{
+    width: 100%;
+    height: 120px;
+
+    margin: 2em auto;
+
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+.contact_order ul{
+    margin: 0 auto;
+}
+.contact_order ul li{
+    float: left;
+    list-style: none;
+    margin: 0.2em;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 1.8em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    border-radius: 24px;
+}
+.contact_order ul li span{
+    font-size: 0.9em;
+    margin: 0 0.6em;
+    display: inline-block;
+}
+.contact_line_box{
+    background-color: #61677C;
+    height: 1px;
+    width: 50px;
+}
+  label {
+    display: block;
+    margin-bottom: 24px;
+    width: 20em;
+  }
+  label p{
+    margin: 0.3em 0;
+    font-size: 0.5em;
+    margin-left: 0.9em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+  }
+  input {
+    margin-right: 8px;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 0.8em;
+  }
+  textarea{
+    margin-right: 8px;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 10em;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 0.8em 1.5em;
+  }
+  input:focus {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+  }
+  textarea:focus {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+  }
+  button {
+    color: #61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin: 30px 37%;
+    padding: 0.6em 2em;
+  }
+  button:hover {
+    box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+  }
+  button:active {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+  }
+  h2{
+    font-size: 1.2em;
+    margin: 1em 0.4em;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+  }
+  h2 span{
+    font-size: 0.5em;
+    color: #939599;
+  }
+#attachment label {
+    display: inline-block;
+    position: relative;
+    font-size: 0.6em;
+    padding: 6px 18px;
+    transition: all 0.3s;
+    border-radius: 20px;
+    color: #61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+    left: 213px;
+    top: -10px;
+    width: 7em;
+}
+#attachment label input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+/*フッター*/
+footer{
+    position:relative;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+    width: 100%;
+    }
+    .footer{
+      height: 2em;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+    }
+    .footer p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 0.7em;
+    margin: 5em 0 2em 0;
+    }
