@@ -55,7 +55,7 @@
         </ul>
       </div>
 
-      <form target="hidden_iframe" onsubmit="submitted=true;"
+      <form
         action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeY-uY41KyT8_6IOStNcdI0onYo1Oe7o2g2XdrLzMA5kpqoKA/formResponse">
         <label for="my_name">お名前</label>
         <input id="email" type="text" name="entry.1847468209" placeholder="お名前">
@@ -72,7 +72,7 @@
         <label for="my_name">その他</label>
         <input id="email" type="text" name="entry.617023466" placeholder="その他">
         <div class="button">
-          <button type=button" name="button" value="送信">送信</button>
+          <button type="submit" name="button" value="送信">送信</button>
         </div>
       </form>
 
@@ -114,9 +114,6 @@
       <p>&copy; canicama</p>
     </div>
   </footer>
-
-  <script>let submitted = false;</script>
-  <iframe name="hidden_iframe" style="display:none;" onload="if(submitted){window.location='thanks.html';}"></iframe>
 
 
 
