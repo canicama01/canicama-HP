@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canicama | お問い合わせ</title>
+  <link rel="stylesheet" href="contact.css">
+
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="global-nav">
+      <ul class="global-nav__list" id="navi_list">
+        <li class="global-nav__item"><a href="index.html#profile">ABOUT</a></li>
+        <li class="global-nav__item"><a href="#">CONTACT</a></li>
+        <li class="global-nav__item"><a href="index.html#gallery">ILLUST</a></li>
+        <li class="global-nav__item"><a href="nikki.html">NIKKI</a></li>
+      </ul>
+      <div class="nav_sns_icon">
+        <ul>
+          <li><a href="https://twitter.com/canicama_"><i class="fab fa-twitter fa-2x"></i></a></li>
+          <li><a href="https://www.instagram.com/reichuki"><i class="fab fa-instagram fa-2x"></i></a></li>
+        </ul>
+        <!--
+      <div class="yurei">
+        <p><a href="yurei.html">ユウレイ公式サイト</a></p>
+      </div>
+      -->
+      </div>
+    </nav>
+    <div class="hamburger" id="js-hamburger">
+      <span class="hamburger__line hamburger__line--1"></span>
+      <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <div class="black-bg" id="js-black-bg"></div>
+  </header>
+
+  <div class="contact_form">
+    <ul>
+      <h2>CONTACT<br><span>お問い合わせ</span></h2>
+      <div class="contact_order">
+        <ul>
+          <li><span>01</span><br>内容入力</li>
+          <li class="contact_line_box" style="margin-top: 13px;"></li>
+          <li><span>02</span><br>内容確認</li>
+          <li class="contact_line_box" style="margin-top: 13px;"></li>
+          <li><span>03</span><br>送信完了</li>
+        </ul>
+      </div>
+
+      <form target="hidden_iframe" onsubmit="submitted=true;"
+        action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeY-uY41KyT8_6IOStNcdI0onYo1Oe7o2g2XdrLzMA5kpqoKA/formResponse">
+        <label for="my_name">お名前</label>
+        <input id="email" type="text" name="entry.1847468209" placeholder="お名前">
+        <label for="email">メールアドレス</label>
+        <input id="email" type="text" name="entry.582059140" placeholder="example@mail.co.jp">
+        <label for="msg">制作内容</label>
+        <textarea id="msg" name="entry.361872345" placeholder="制作内容"></textarea>
+        <label for="my_name">使用用途</label>
+        <input id="email" type="text" name="entry.1590780043" placeholder="アイコンに使用">
+        <label for="my_name">予算</label>
+        <input id="email" type="text" name="entry.524397925" placeholder="0000円">
+        <label for="my_name">納期</label>
+        <input id="date" type="date" name="entry.1628004502" placeholder="00年00月00日">
+        <label for="my_name">その他</label>
+        <input id="email" type="text" name="entry.617023466" placeholder="その他">
+        <div class="button">
+          <button type=button" name="button" value="送信">送信</button>
+        </div>
+      </form>
+
+      <!--
+        <form
+        action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeY-uY41KyT8_6IOStNcdI0onYo1Oe7o2g2XdrLzMA5kpqoKA/formResponse">
+        <label>
+          <p>お名前</p><input type="text" placeholder="お名前" name="entry.1847468209" />
+        </label>
+        <label>
+          <p>メールアドレス</p><input type="text" placeholder="メールアドレス" name="entry.582059140" />
+        </label>
+        <label>
+          <p>制作内容</p><textarea id="t_message" name="message" placeholder="制作内容" name="entry.361872345"></textarea>
+        </label>
+        <div id="attachment">
+          <label><input type="file" name="ファイル添付" class="fileinput" name="entry.1590780043">添付ファイル</label>
+        </div>
+        <label>
+          <p>使用用途</p><input type="text" placeholder="アイコンに使用" name="entry.1590780043" />
+        </label>
+        <label>
+          <p>予算</p><input type="text" placeholder="0000円" name="entry.524397925" />
+        </label>
+        <label>
+          <p>納期</p><input type="text" placeholder="00年00月00日" name="entry.1628004502" />
+        </label>
+        <label>
+          <p>その他</p><textarea id="t_message" name="entry.617023466" placeholder="その他"></textarea>
+        </label>
+        <button type="button">送信</button>
+      </form>
+    -->
+    </ul>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p>&copy; canicama</p>
+    </div>
+  </footer>
+
+  <script>let submitted = false;</script>
+  <iframe name="hidden_iframe" style="display:none;" onload="if(submitted){window.location='thanks.html';}"></iframe>
+
+
+
+  <script src="navi.js"></script>
+
+</body>
+
+</html>
